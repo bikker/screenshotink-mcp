@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.2
+
+- `compare_screenshots` / all captures: fast-fail on `quota_exceeded` instead of
+  retrying the 429 six times — retries are now limited to transient
+  `rate_limited` (per-second) errors, so an out-of-quota key fails immediately
+  with a clear message.
+- `capture_sitemap`: cap `limit` at 25 (was 50) to keep worst-case runs inside
+  the 5-minute remote timeout against slow pages. Default unchanged (10).
+- Report the server version (1.0.2) in the MCP `serverInfo`.
+
 ## 1.0.1
 
 - Add MCP tool annotations to all five tools: `readOnlyHint: true` (the tools
