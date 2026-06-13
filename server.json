@@ -1,7 +1,7 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.bikker/screenshotink-mcp",
-  "description": "Screenshot, compare, audit and monitor any web page. Five tools for AI agents — take_screenshot, bulk_screenshots, compare_screenshots, run_lighthouse, capture_sitemap — backed by ScreenshotInk's hosted Chromium fleet. The captured image comes back inline so the agent can reason about the rendered pixels in the same turn. Free tier: 100 captures/month, no card.",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.screenshotink/mcp",
+  "description": "Screenshot, diff, audit and sitemap-capture any web page — 5 MCP tools for AI agents.",
   "status": "active",
   "repository": {
     "url": "https://github.com/bikker/screenshotink-mcp",
@@ -9,24 +9,6 @@
   },
   "websiteUrl": "https://screenshotink.com/mcp",
   "version": "1.0.3",
-  "packages": [
-    {
-      "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "@screenshotink/mcp",
-      "version": "1.0.3",
-      "transport": { "type": "stdio" },
-      "runtimeHint": "npx",
-      "environmentVariables": [
-        {
-          "name": "SCREENSHOTINK_API_KEY",
-          "description": "Your ScreenshotInk API key (sk_live_…). Free at https://screenshotink.com/signup.",
-          "isRequired": true,
-          "isSecret": true
-        }
-      ]
-    }
-  ],
   "remotes": [
     {
       "type": "streamable-http",
