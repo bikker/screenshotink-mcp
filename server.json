@@ -8,7 +8,24 @@
     "source": "github"
   },
   "websiteUrl": "https://screenshotink.com/mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@screenshotink/mcp",
+      "version": "1.0.3",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "SCREENSHOTINK_API_KEY",
+          "description": "Your ScreenshotInk API key (sk_live_…). Free at https://screenshotink.com/signup.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",

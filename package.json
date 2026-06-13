@@ -1,6 +1,7 @@
 {
   "name": "@screenshotink/mcp",
   "version": "1.0.3",
+  "mcpName": "com.screenshotink/mcp",
   "description": "Screenshot MCP server for Claude, Cursor & AI agents — capture, batch, compare and audit any web page. Hosted Chromium, no local browser.",
   "keywords": [
     "mcp",
