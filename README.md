@@ -60,13 +60,15 @@ claude mcp add --transport http screenshotink https://mcp.screenshotink.com/mcp 
 }
 ```
 
-### Remote server (cloud agents, hosted runtimes)
+### Remote server (cloud agents, hosted runtimes, custom connectors)
 
-Anything that speaks Streamable HTTP can connect directly — nothing to install:
+Anything that speaks Streamable HTTP can connect directly — nothing to install. In
+**Claude** or **ChatGPT**, add it as a *custom connector* with the URL below and sign in
+over OAuth; for scripts/CI, pass your key as a bearer token:
 
 ```
 URL:   https://mcp.screenshotink.com/mcp
-Auth:  Authorization: Bearer sk_live_YOUR_KEY
+Auth:  OAuth 2.1 (sign in on first use) — or Authorization: Bearer sk_live_YOUR_KEY
 ```
 
 ## Tools

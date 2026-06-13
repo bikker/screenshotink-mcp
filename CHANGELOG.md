@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.3
+
+- Rewrote all five tool `description`s for tool-selection (AEO): each now states
+  what it does, *when* an agent should reach for it, and that the image comes
+  back inline so the model can reason about the rendered pixels in the same
+  turn. No behaviour or schema changes; annotations unchanged.
+
 ## 1.0.2
 
 - `compare_screenshots` / all captures: fast-fail on `quota_exceeded` instead of
